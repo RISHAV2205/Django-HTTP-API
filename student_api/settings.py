@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
+from decouple import config
 
 from pathlib import Path
 
@@ -146,4 +147,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-WEATHER_API_KEY = '935e2435a545806a7da44283e08dced4'
+WEATHER_API_KEY = config('WEATHER_API_KEY')
+
