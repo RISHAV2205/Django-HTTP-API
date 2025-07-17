@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'students_class',
     # 'django_filters',
     'core',
+    'weather',
+    
     
     
 ]
@@ -142,3 +144,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+WEATHER_API_KEY = '935e2435a545806a7da44283e08dced4'
