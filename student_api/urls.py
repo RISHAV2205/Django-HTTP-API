@@ -22,4 +22,7 @@ urlpatterns = [
     path('student/',include('students.urls')),
     path('student-class/',include('students_class.urls')),
     path('weather/',include('weather.urls')),
+    path('login-student/',include("account.urls")),
+    
+    
 ]
